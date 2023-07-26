@@ -1,0 +1,33 @@
+body {
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.snowflake {
+    position: absolute;
+    top: -50px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    animation-name: fall;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(104vh) rotate(360deg);
+    }
+}
